@@ -7,3 +7,4 @@ fi
 
 # User specific environment and startup programs
 alias neofetch=fastfetch
+alias woman=man
