@@ -1,0 +1,2 @@
+#!/bin/env bash
+ln -sf "$PWD/bashrc" "$HOME/.bashrc"
