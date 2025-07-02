@@ -26,3 +26,6 @@ unset rc
 set -o vi
 alias woman=man
 export EDITOR=vim
+
+# User specific environment and startup programs
+alias neofetch=fastfetch
