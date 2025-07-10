@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+file="$HOME/repos/dot/bin/$1"
+touch "$file"
+chmod +x "$file"
+if test -e "$file"; then
+	echo "The file already exists"
+	exit 1
+fi
+echo -e "#!/usr/bin/env bash\nset -euo" >> "$file"
+exec vim "$file"
