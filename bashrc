@@ -6,7 +6,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-PATH="$HOME/repos/dot/bin:$HOME/.local/bin:$HOME/bin:$PATH"
+PATH="$HOME/repos/dot/bin:$HOME/.local/bin:$HOME/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+
 export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -24,7 +25,9 @@ unset rc
 set -o vi
 alias woman=man
 alias neofetch=fastfetch
-echo "Hello World!"
+alias reload='exec $SHELL -l'
+alias gotodot="cd $HOME/repos/dot"
+echo "Hello World! The current date is $(date)"
 export EDITOR=vim
 
 # User specific environment and startup programs
